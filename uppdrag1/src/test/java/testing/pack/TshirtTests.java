@@ -3,101 +3,66 @@ package testing.pack;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@TestMethodOrder(OrderAnnotation.class)
 @TestInstance(Lifecycle.PER_CLASS)
 public class TshirtTests {
     private Tshirts tshirts;
-    private int num = 0;
-    private String size ;
+
 
     @BeforeAll
     void init() {
-
-        tshirts = new Tshirts();
-
-        tshirts.add("XS",10);
-        tshirts.add("S",10);
-        tshirts.add("M",10);
-        tshirts.add("L",10);
-        tshirts.add("XL",10);
-        tshirts.add("XXL",10);
-
+        tshirts = new Tshirts(10);
     }
 
     @Test
-    @Order(1)
-    @DisplayName("Add the given numbers of the tShirtSize into the existing collection")
-    void addTest() {
-         num = 4;
-         size = "XS";
-        tshirts.add(size,num);
-        assertTrue((tshirts.contains(size)>0), " - addTest");
+    void addTest1() {assertTrue(tshirts.add("XS",4));}
+    @Test
+    void addTest2() {assertFalse(tshirts.add("XS1",4));}
+    @Test
+    void addTest3() { assertFalse(tshirts.add("XS",-4));}
+    @Test
+    void addTest4() {assertFalse(tshirts.add("XS",100));}
+    @Test
+    void addTest5() {assertFalse(tshirts.add("XS1",100));}
+
+    @Test
+    void removeTest1() throws Exception{
+        assertTrue(tshirts.remove("XS",8), "removeTest1");
     }
 
     @Test
-    @Order(2)
-    @DisplayName("Remove the given numbers of the tShirtSize from the existing collection")
-    void removeTest() {
-        num = 8;
-        size = "XS";
-        tshirts.remove(size,num);
-        assertTrue(tshirts.contains(size)>0, ()->"removed size still in the collection");
+    void removeTest2() throws Exception{
+        assertTrue(tshirts.remove("XS1",8)==false,"removeTest2 failed");
     }
 
-
+//    @Test
+//    void removeTest3() throws LowStockException{
+//        assertTrue(tshirts.remove(size"XS",20)==false, "removeTest3");
+//    }
     @Test
-    @Order(3)
-    @DisplayName("compare the Test_Tshirt list with the given list")
-    void listAllTest() {
+    void containerThrowsLowStockExceptionTest(){
+        /* want 20 tshirts of size XS, but have less than 20 in storage. So throws an Exception*/
+        Exception e = assertThrows(LowStockException.class,  ()->{tshirts.remove("XS",20);});
+        assertEquals("demand is greater than inStock", e.getMessage());
+    }
+    @Test
+    void compareTest() {
         Map<String,Integer> myLst = new HashMap<>();
         myLst.put("XS",2);
         myLst.put("S",3);
         myLst.put("M",4);
         myLst.put("L",5);
         myLst.put("XL",6);
-        myLst.put("XXL",1);
-
-        Map<String,Integer> expectedLst = tshirts.listAll();
-
-       // assertEquals(myLst, expectedLst,()->"lists not the same");
-        //  assertNotEquals(myLst, expectedLst,()->"lists the same");
-       // assertFalse(myLst.equals(expectedLst));
+        Map<String,Integer> expectedLst = tshirts.getAll();
         assertNotSame( myLst, expectedLst,"lists the same");
         myLst.clear();
-        myLst=null;
-
-    }
-
-    @Test
-    @Order(4)
-    @DisplayName("Check if Tshirt size is in stock")
-    void containsTest() {
-        int n = tshirts.contains("XS");
-       // System.out.println("tshirts.contains(\"XS\"): " + n);
-        assertNotEquals(10, n, ()->"Tshirt-size numbers don't match");
-    }
-
-    @Test
-    @Order(5)
-    @DisplayName("Entire Tshirt stock is empty")
-    void emptyTshirtContainerThrowsNullPointerException(){
-        tshirts.cleanUp();
-        assertThrows(NullPointerException.class, ()->{
-                                                        tshirts.contains("XS");
-                                                        });
     }
 
 
     @AfterAll
-    public  void cleanUp(){
-        tshirts = null;
-    }
+    public  void cleanUp(){ tshirts.cleanUp(); tshirts = null;}
 }
