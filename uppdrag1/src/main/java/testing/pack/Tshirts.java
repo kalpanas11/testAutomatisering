@@ -23,14 +23,6 @@ public class Tshirts {
     /* incrementing the numbers of a T-shirt-size */
     public boolean add(String size, int n) {
         if (((size.equals("XS") || size.equals("S") || size.equals("M") || size.equals("L") || size.equals("XL")) && ( n>0 && n<=10))) {
-//            if (sizes.get(size) != null) {
-//                int value = sizes.get(size) + n;
-//                sizes.put(size, value);
-//                // System.out.println("Value at add-size(): " + value);
-//           } else {
-//                sizes.put(size, n);
-//                System.out.println("Value at add/size(): " + n);
-//            }
             if (sizes.get(size) != null) { n  = sizes.get(size) + n;}
             sizes.put(size, n);
             return true;
@@ -40,7 +32,6 @@ public class Tshirts {
 
 
     /* decrementing the number of a T-shirt size */
-
     public boolean remove(String size, int toRemove) throws LowStockException{  // && toRemove<=10
         if (((size.equals("XS") || size.equals("S") || size.equals("M") || size.equals("L") || size.equals("XL")) && ( toRemove>0))) {
             int inStock = sizes.get(size);
@@ -59,7 +50,6 @@ public class Tshirts {
 
     /* list all of T-shirt sizes */
     public Map<String,Integer> getAll() {
-     //   System.out.println("all tShirts : " +sizes);
             return sizes;
     }
 
