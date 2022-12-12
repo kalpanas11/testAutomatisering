@@ -6,11 +6,11 @@ public class LoginTest {
     private LoginPage loginPage;
     public LoginTest() throws InterruptedException{
         testShowHomePage();
-//        testForgotPasswordLink();
-//        testLogin();
-//        testSideMenuHovering("Admin","admin123");
-//        testOpenClose_SideMenuButton("Admin","admin123");
-//        testLogout("Admin","admin123");
+        testForgotPasswordLink();
+        testLogin();
+        testSideMenuHovering("Admin","admin123");
+        testOpenClose_SideMenuButton("Admin","admin123");
+        testLogout("Admin","admin123");
     }
 
     private void testShowHomePage() throws InterruptedException{
