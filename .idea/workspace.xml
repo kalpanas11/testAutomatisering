@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c516043a-0d9c-4f23-a56f-9794f934d4e2" name="Changes" comment="uncommented the lines in the public LoginTest()constructor, which was forgotten earlier.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium/TestCases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium/TestCases/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TestClass.testCopyRightsLink">
+  <component name="RunManager" selected="TestNG./Users/Kalpana/IdeaProjects/uppdrag2/testng.xml">
     <configuration name="com.selenium.TestCases" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.selenium.TestCases.LoginTest" />
       <module name="uppdrag2" />
@@ -69,24 +66,6 @@
       <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
       <option name="METHOD_NAME" value="logoutOfWebsite" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClass.menuCollapse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="uppdrag2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.seleniumTestNG.testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
-      <option name="METHOD_NAME" value="menuCollapse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,13 +127,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/Kalpana/IdeaProjects/uppdrag2/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="uppdrag2" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/Kalpana/IdeaProjects/uppdrag2/testng.xml" />
         <item itemvalue="TestNG.TestClass.testCopyRightsLink" />
         <item itemvalue="TestNG.TestClass.testBrandBanner" />
         <item itemvalue="TestNG.TestClass.logoutOfWebsite" />
         <item itemvalue="TestNG.TestClass.verifySearch" />
-        <item itemvalue="TestNG.TestClass.menuCollapse" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670878748713</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="uncommented the lines in the public LoginTest()constructor, which was forgotten earlier.">
+      <created>1672009443066</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672009443066</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
