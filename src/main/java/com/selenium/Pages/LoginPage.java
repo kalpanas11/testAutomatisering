@@ -64,8 +64,8 @@ public class LoginPage extends BaseClass {
     public void sideMenuHovering(String usr, String pass) throws InterruptedException {
         loginToWebsite(usr, pass);
         wait(1000);
-        String cssSel = "ul[class='oxd-main-menu']";
-        List<WebElement> myElements = driver.findElements(By.cssSelector(cssSel));
+
+        List<WebElement> myElements = driver.findElements(By.cssSelector("ul[class='oxd-main-menu']"));
         //  int x = 0;
         //  String sxPath;
         int listLength = myElements.iterator().next().getText().split(System.getProperty("line.separator")).length;

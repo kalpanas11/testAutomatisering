@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c516043a-0d9c-4f23-a56f-9794f934d4e2" name="Changes" comment="Adding uppdrag2">
+    <list default="true" id="c516043a-0d9c-4f23-a56f-9794f934d4e2" name="Changes" comment="uncommented the lines in the public LoginTest()constructor, which was forgotten earlier.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium/TestCases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium/TestCases/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="TestNG.TestClass.testCopyRightsLink">
     <configuration name="com.selenium.TestCases" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.selenium.TestCases.LoginTest" />
       <module name="uppdrag2" />
@@ -55,6 +58,105 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestClass.logoutOfWebsite" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="uppdrag2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumTestNG.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
+      <option name="METHOD_NAME" value="logoutOfWebsite" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.menuCollapse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="uppdrag2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumTestNG.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
+      <option name="METHOD_NAME" value="menuCollapse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.testBrandBanner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="uppdrag2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumTestNG.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
+      <option name="METHOD_NAME" value="testBrandBanner" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.testCopyRightsLink" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="uppdrag2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumTestNG.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
+      <option name="METHOD_NAME" value="testCopyRightsLink" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.verifySearch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="uppdrag2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumTestNG.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumTestNG.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumTestNG.testCases.TestClass" />
+      <option name="METHOD_NAME" value="verifySearch" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestClass.testCopyRightsLink" />
+        <item itemvalue="TestNG.TestClass.testBrandBanner" />
+        <item itemvalue="TestNG.TestClass.logoutOfWebsite" />
+        <item itemvalue="TestNG.TestClass.verifySearch" />
+        <item itemvalue="TestNG.TestClass.menuCollapse" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670794545083</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="uncommented the lines in the public LoginTest()constructor, which was forgotten earlier.">
+      <created>1670878748713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670878748713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +251,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding uppdrag2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding uppdrag2" />
+    <MESSAGE value="uncommented the lines in the public LoginTest()constructor, which was forgotten earlier." />
+    <option name="LAST_COMMIT_MESSAGE" value="uncommented the lines in the public LoginTest()constructor, which was forgotten earlier." />
   </component>
 </project>
